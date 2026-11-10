@@ -188,3 +188,31 @@ public class MainActivity extends Activity {
         }
     }
 }
+package com.estudiosrafael;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.graphics.Color;
+import android.widget.TextView;
+import android.widget.LinearLayout;
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        LinearLayout layout = new LinearLayout(this);
+        layout.setOrientation(LinearLayout.VERTICAL);
+        layout.setGravity(17);
+        layout.setBackgroundColor(Color.WHITE);
+
+        TextView titulo = new TextView(this);
+        titulo.setText("Bienvenido a Estudios Rafael");
+        titulo.setTextSize(26);
+        titulo.setTextColor(Color.BLACK);
+
+        layout.addView(titulo);
+        setContentView(layout);
+    }
+}
