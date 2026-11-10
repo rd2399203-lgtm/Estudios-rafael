@@ -62,4 +62,23 @@ plugins {
 }
 plugins {
     id 'com.android.application' version '8.6.1' apply false
+
+
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.estudiosrafael'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.estudiosrafael'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+}
+
 }
